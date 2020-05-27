@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산림휴양지(슬라이드쇼&버튼jQuery적용)</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+
+
+
+        <header id="header">
+            <img src="images/header_01.png" alt="로고이미지" width="441" height="42">
+        </header> <!-- header#header -->
+
+
+        <nav id="gnb">
+            <ul>
+                <li><a href="#">서울/경기</a></li>
+                <li><a href="#">강원</a></li>
+                <li><a href="#">충북</a></li>
+                <li><a href="#">충남</a></li>
+                <li><a href="#">전북</a></li>
+                <li><a href="#">전남</a></li>
+                <li><a href="#">경북</a></li>
+                <li><a href="#">경남</a></li>
+            </ul>
+        </nav> <!-- nav#gnb -->
+
+
+
+        <!-- //////////////////////////////// 슬라이드 쇼 시작 ///////////////////////////////////-->
+        <div id="slideMain">
+            <!-- slideshow 기능 -->
+
+            <div id="slideCellPrev" class="arrowDiv">
+                <img class="arrowIcon" id="prevIcon" src="images/prev_img.png" 
+                alt="슬라이드쇼 이전으로" width="51" height="44"
+                onmouseout="fnSlideStart()">
+            </div> <!-- div#slideCellPrev -->
+
+
+            <!-- slideStage 기능시작 -->
+            <div id="slideCellMain">
+                <ul id="slideShuttleFrame">
+
+                    <li class="frameLi">
+                        <!-- class 삭제금지! 미사용시 슬라이드 쇼 제이쿼리에서 버그발생 -->
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/gallery_01.jpg" alt="유명산이미지" width="265" height="146">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    유명산 자연휴양림
+                                    <img src="images/homeIcon_01.jpg" alt="해당홈페이지이동" width="28" height="28">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기 가평군 설악면 유명산길 79-53
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>ㆍ이용문의: 031-589-5487</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+
+
+                    <li class="frameLi">
+                        <!-- class 삭제금지! 미사용시 슬라이드 쇼 제이쿼리에서 버그발생 -->
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/gallery_02.jpg" alt="산음이미지" width="265" height="146">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    산음 자연휴양림
+                                    <img src="images/homeIcon_01.jpg" alt="해당홈페이지이동" width="28" height="28">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기도 양평군 단월면 고북길 347
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>ㆍ이용문의: 031-774-8133</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+
+
+                    <li class="frameLi">
+                        <!-- class 삭제금지! 미사용시 슬라이드 쇼 제이쿼리에서 버그발생 -->
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/gallery_03.jpg" alt="아세안 이미지" width="265" height="146">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    아세안 자연휴양림
+                                    <img src="images/homeIcon_01.jpg" alt="해당홈페이지이동" width="28" height="28">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기도 양주시 백석읍 기산로 472
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>ㆍ이용문의: 031-871-2796</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <li class="frameLi">
+                        <!-- class 삭제금지! 미사용시 슬라이드 쇼 제이쿼리에서 버그발생 -->
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/gallery_04.jpg" alt="중미산 이미지" width="265" height="146">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    중미산 자연휴양림
+                                    <img src="images/homeIcon_01.jpg" alt="해당홈페이지이동" width="28" height="28">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기도 양평군 옥천면 중미산로 1152
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>ㆍ이용문의: 031-771-7166</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+
+
+                </ul>  <!-- ul#slideShuttleFrame -->
+
+            </div> <!-- div#slideCellMain -->
+            <!-- slideStage 기능끝 -->
+
+
+
+            <div id="slideCellNext" class="arrowDiv">
+                <img class="arrowIcon" id="nextIcon" src="images/next_img.png" 
+                alt="슬라이드쇼 다음으로" width="51" height="44"
+                onmouseout="fnSlideStart()">
+            </div> <!-- div#slideCellNext -->
+
+        </div> <!-- div#slideMain -->
+        <!-- //////////////////////////////// 슬라이드 쇼 끝 ///////////////////////////////////-->
+
+        <main id="main">
+
+            <div id="bbs">
+
+                <div id="bbsContents">
+
+                    <header id="bbsHeader">
+                        <h2><i class='far fa-check-circle'></i> 공지사항</h2>
+                        <h2><span>ㆍ</span>보도자료</h2>
+                        <span>
+                            <img src="images/more.png" alt="더보기 아이콘" width="19" height="19">
+                        </span>
+                    </header>
+
+                    <div class="notice">
+                        <div>
+                            <span>06</span><br><span>2019.09</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>국립자연휴양림 '스탬프투어' 이벤트...</h3>
+                            </li>
+                            <li>
+                                국립자연휴양림 스탬프 투어란?'국립자연휴양림 스탬프
+                                투어'는 아름다운 경관과 쉼터를 제공하는 숲으
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice">
+                        <div>
+                            <span>05</span><br><span>2019.09</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>반려견 동반 휴양림 정식운영 안내</h3>
+                            </li>
+                            <li>
+                                반려견 동반 고객의 휴양수요 충족을 위해 2018년
+                                7월부터 시범운영한 <q>반려견 동반 자연휴양림</q>에
+                                대하
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice">
+                        <div>
+                            <span>01</span><br><span>2019.08</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>국립자연휴양림 전기자동차 충전기...</h3>
+                            </li>
+                            <li>
+                                국립자연휴양림 전기자동차 충전기 설치 현황○
+                                전기자동차 충전치 설치 휴양림-급속충전기(50kw):유
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notice">
+                        <div>
+                            <span>25</span><br><span>2019.07</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <h3>제7회 국립자연휴양림 포토에세이 ...</h3>
+                            </li>
+                            <li>
+                                국립자연휴양림관리소에서 국립자연휴양림 이용객들의
+                                추억을 담아볼 수 있는 '제7회 국립자연휴야 포
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- div#bbsContents
+                            border-spacing 사용불가로 인한 영역구분
+                            (div#bbs에 padding-right 적용함)
+                    -->
+
+            </div> <!-- div#bbs -->
+
+            <div id="promotion">
+                <header id="signBoardHeader">
+                    <h2>알림판</h2>
+                    <img src="images/control_left.png" alt="">
+                    <img src="images/control_pause.png" alt="">
+                    <img src="images/control_right.png" alt="">
+                    <img src="images/control_list.png" alt="">
+                </header>
+                <div id="poster">
+                    <img src="images/notice_01.jpg" alt="" width="380" height="244">
+                </div>
+            </div> <!-- div#promotion -->
+
+        </main> <!-- main#main -->
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
